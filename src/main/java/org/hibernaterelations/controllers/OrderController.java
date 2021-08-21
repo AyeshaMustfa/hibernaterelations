@@ -1,6 +1,5 @@
 package org.hibernaterelations.controllers;
 
-import org.hibernaterelations.domain.Customer;
 import org.hibernaterelations.domain.Order;
 import org.hibernaterelations.model.OrderRequest;
 import org.hibernaterelations.services.CustomerServices;
@@ -17,7 +16,7 @@ public class OrderController {
 
     @Autowired
     private OrderServices orderServices;
-    private CustomerServices customerServices;
+
 
     @GetMapping("/get-all-orders")
     public List<Order> getAllOrdersGet() {
