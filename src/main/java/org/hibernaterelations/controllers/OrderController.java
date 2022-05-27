@@ -34,7 +34,7 @@ public class OrderController {
         orderServices.deleteOrderById(id);
     }
 
-    @GetMapping("get-order-byId/{id}")
+    @GetMapping("find-order-byId/{id}")
     public Optional<Order> findOrderById(@PathVariable Integer id) {
         return orderServices.findOrderById(id);
 
