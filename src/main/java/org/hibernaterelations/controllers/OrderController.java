@@ -29,14 +29,14 @@ public class OrderController {
 
     }
 
-    @DeleteMapping("delete-order/{o_id}")
-    public void deleteCustomer(@PathVariable Integer o_id) {
-        orderServices.deleteOrderById(o_id);
+    @DeleteMapping("delete-order/{id}")
+    public void deleteCustomer(@PathVariable Integer id) {
+        orderServices.deleteOrderById(id);
     }
 
-    @GetMapping("find-order-byId/{o_id}")
-    public Optional<Order> findOrderById(@PathVariable Integer o_id) {
-        return orderServices.findOrderById(o_id);
+    @GetMapping("get-order-byId/{id}")
+    public Optional<Order> findOrderById(@PathVariable Integer id) {
+        return orderServices.findOrderById(id);
 
     }
 }
